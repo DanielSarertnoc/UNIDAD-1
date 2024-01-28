@@ -45,3 +45,24 @@ except ValueError:
         print("EL DATO ES TIPO FLOTANTE.")
     except ValueError:
         print("EL DATO ES UNA CADENA DE TEXTO")
+
+
+print("IDENTIFICACÓN DE DATOS")
+
+TDATO = input("¿Qué tipo de dato desea ingresar? (ENTERO, FLOTANTE, CARACTER): ")
+
+
+if TDATO == "int":
+    valor = int(input(f"Ingrese un valor de tipo {TDATO}: "))
+elif TDATO == "float":
+    valor = float(input(f"Ingrese un valor de tipo {TDATO}: "))
+elif TDATO == "str":
+    valor = input(f"Ingrese un valor de tipo {TDATO}: ")
+else:
+    print("Tipo de dato no válido. Por favor, ingrese 'int', 'float' o 'str'.")
+    exit()
+
+
+print("Tipo de dato ingresado: {type(valor)}")
+print("Valor ingresado: {valor}")
+
